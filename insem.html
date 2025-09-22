@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Web Page</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      body {
+        background-color: #f0f0f0;
+      }
+      header, footer {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header, footer {
+        font-size: 12px;
+        padding: 0.5rem;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Web Page</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Welcome to the responsive web page. Resize the browser window to see the layout adjust!</p>
+      <img src="https://via.placeholder.com/600x300" alt="Responsive Sample Image" class="responsive-img">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
